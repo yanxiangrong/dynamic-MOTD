@@ -22,7 +22,7 @@ date=$(date +"%x %T %Z(%:::z)")
 #Cpu load
 load=($(cat /proc/loadavg | awk '{print $1,$2,$3}'))
 
-hostname=$(echo $HOSTNAME)
+hostname=$(cat /etc/hostname)
 
 #Processes
 PROCESS=`ps -eo user=|sort|uniq -c | awk '{ print $2 " " $1 }'`
