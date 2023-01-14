@@ -8,3 +8,10 @@ Linux 动态 MOTD
 
 ## 使用方法
 把 `motd.sh` 文件复制到 `/etc/profile/` 目录下即可。
+
+## 一键安装
+```shell
+git clone https://github.com/yanxiangrong/dynamic-MOTD.git
+cd dynamic-MOTD
+sudo cp motd.sh /etc/profile/
+```
